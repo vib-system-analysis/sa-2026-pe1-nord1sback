@@ -24,3 +24,13 @@
 - [Описание темы проекта](lab1_boundaries_ai_closet_inventory/project/project-brief.md)
 
 Наблюдения и выводы относятся только к описанным эпизодам; их не следует считать универсальной нормой для других людей или ситуаций.
+
+## Лабораторная работа №2
+
+Тема: **структура системы и дерево целей**. Работа продолжает лабораторную 1 и анализирует фактический процесс выбора одежды.
+
+Материалы находятся в [`lab2_goal_tree_morphological_analysis_ai_closet_inventory`](lab2_goal_tree_morphological_analysis_ai_closet_inventory/README.md):
+
+- [Декомпозиции по функциям и составу](lab2_goal_tree_morphological_analysis_ai_closet_inventory/docs/01-structuring-methods.md)
+- [Дерево целей с измеримыми листьями](lab2_goal_tree_morphological_analysis_ai_closet_inventory/docs/02-goal-tree-measurable.md)
+- [Конфликт целей и слабая ветка](lab2_goal_tree_morphological_analysis_ai_closet_inventory/docs/03-conflict-and-evidence.md)
