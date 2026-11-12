@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="Definitions_Clothing" targetNamespace="https://github.com/vib-system-analysis/sa-2026-pe1-nord1sback">
+  <bpmn:process id="ClothingSelection" name="Выбор одежды перед выходом" isExecutable="false">
+    <bpmn:startEvent id="start" name="Пора выбрать одежду">
+      <bpmn:outgoing>f1</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:task id="prepare" name="Подобрать вещи">
+      <bpmn:incoming>f1</bpmn:incoming>
+      <bpmn:outgoing>f2</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="check" name="Проверить комплект">
+      <bpmn:incoming>f2</bpmn:incoming>
+      <bpmn:incoming>f6</bpmn:incoming>
+      <bpmn:outgoing>f3</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:exclusiveGateway id="decision" name="Комплект подходит?">
+      <bpmn:incoming>f3</bpmn:incoming>
+      <bpmn:outgoing>f4</bpmn:outgoing>
+      <bpmn:outgoing>f5</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:endEvent id="end" name="Комплект выбран">
+      <bpmn:incoming>f4</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:task id="replace" name="Найти или заменить вещи">
+      <bpmn:incoming>f5</bpmn:incoming>
+      <bpmn:outgoing>f6</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="f1" sourceRef="start" targetRef="prepare"/>
+    <bpmn:sequenceFlow id="f2" sourceRef="prepare" targetRef="check"/>
+    <bpmn:sequenceFlow id="f3" sourceRef="check" targetRef="decision"/>
+    <bpmn:sequenceFlow id="f4" sourceRef="decision" targetRef="end" name="Да"/>
+    <bpmn:sequenceFlow id="f5" sourceRef="decision" targetRef="replace" name="Нет"/>
+    <bpmn:sequenceFlow id="f6" sourceRef="replace" targetRef="check"/>
+    <bpmn:textAnnotation id="context"><bpmn:text>Владелец гардероба учитывает повод, погоду и доступность вещей. При сомнении может спросить мнение близкого.</bpmn:text></bpmn:textAnnotation>
+    <bpmn:association id="contextLink" sourceRef="check" targetRef="context" associationDirection="None"/>
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="Diagram_Clothing">
+    <bpmndi:BPMNPlane id="Plane_Clothing" bpmnElement="ClothingSelection">
+      <bpmndi:BPMNShape id="start_di" bpmnElement="start"><dc:Bounds x="45" y="144" width="36" height="36"/><bpmndi:BPMNLabel><dc:Bounds x="10" y="190" width="105" height="32"/></bpmndi:BPMNLabel></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="prepare_di" bpmnElement="prepare"><dc:Bounds x="125" y="122" width="145" height="80"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="check_di" bpmnElement="check"><dc:Bounds x="330" y="122" width="150" height="80"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="decision_di" bpmnElement="decision" isMarkerVisible="true"><dc:Bounds x="545" y="137" width="50" height="50"/><bpmndi:BPMNLabel><dc:Bounds x="500" y="92" width="140" height="24"/></bpmndi:BPMNLabel></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="end_di" bpmnElement="end"><dc:Bounds x="700" y="144" width="36" height="36"/><bpmndi:BPMNLabel><dc:Bounds x="661" y="190" width="114" height="26"/></bpmndi:BPMNLabel></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="replace_di" bpmnElement="replace"><dc:Bounds x="465" y="300" width="210" height="80"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="f1_di" bpmnElement="f1"><di:waypoint x="81" y="162"/><di:waypoint x="125" y="162"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="f2_di" bpmnElement="f2"><di:waypoint x="270" y="162"/><di:waypoint x="330" y="162"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="f3_di" bpmnElement="f3"><di:waypoint x="480" y="162"/><di:waypoint x="545" y="162"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="f4_di" bpmnElement="f4"><di:waypoint x="595" y="162"/><di:waypoint x="700" y="162"/><bpmndi:BPMNLabel><dc:Bounds x="630" y="138" width="30" height="16"/></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="f5_di" bpmnElement="f5"><di:waypoint x="570" y="187"/><di:waypoint x="570" y="300"/><bpmndi:BPMNLabel><dc:Bounds x="581" y="233" width="30" height="16"/></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="f6_di" bpmnElement="f6"><di:waypoint x="465" y="340"/><di:waypoint x="405" y="340"/><di:waypoint x="405" y="202"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="context_di" bpmnElement="context"><dc:Bounds x="105" y="255" width="240" height="88"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="contextLink_di" bpmnElement="contextLink"><di:waypoint x="355" y="202"/><di:waypoint x="307" y="255"/></bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

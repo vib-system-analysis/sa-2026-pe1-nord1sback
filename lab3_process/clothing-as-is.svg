@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 790 410" width="790" height="410" role="img" aria-label="BPMN. Выбор одежды перед выходом">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#273142"/></marker></defs>
+<rect width="790" height="410" fill="#fff"/>
+<g font-family="Arial, sans-serif" fill="#192334" font-size="15">
+<text x="30" y="39" font-size="23" font-weight="700">Выбор одежды перед выходом</text>
+<text x="30" y="64" fill="#46566b">Текущий процесс · владелец гардероба</text>
+<polyline points="81,162 125,162" fill="none" stroke="#273142" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="270,162 330,162" fill="none" stroke="#273142" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="480,162 545,162" fill="none" stroke="#273142" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="595,162 700,162" fill="none" stroke="#273142" stroke-width="2" marker-end="url(#arrow)"/><text x="630" y="150">Да</text>
+<polyline points="570,187 570,300" fill="none" stroke="#273142" stroke-width="2" marker-end="url(#arrow)"/><text x="581" y="245">Нет</text>
+<polyline points="465,340 405,340 405,202" fill="none" stroke="#273142" stroke-width="2" marker-end="url(#arrow)"/>
+<circle cx="63" cy="162" r="18" fill="white" stroke="#273142" stroke-width="2"/><text x="63" y="199" text-anchor="middle"><tspan x="63">Пора выбрать</tspan><tspan x="63" dy="18">одежду</tspan></text>
+<rect x="125" y="122" width="145" height="80" rx="11" fill="#eff5fc" stroke="#273142" stroke-width="2"/><text x="197.5" y="167" text-anchor="middle">Подобрать вещи</text>
+<rect x="330" y="122" width="150" height="80" rx="11" fill="#eff5fc" stroke="#273142" stroke-width="2"/><text x="405" y="167" text-anchor="middle">Проверить комплект</text>
+<path d="M 570 137 L 595 162 L 570 187 L 545 162 Z" fill="#fff4d8" stroke="#273142" stroke-width="2"/><path d="m 563 155 l 14 14 m -14 0 l 14 -14" stroke="#273142" stroke-width="3"/><text x="570" y="110" text-anchor="middle">Комплект подходит?</text>
+<circle cx="718" cy="162" r="18" fill="white" stroke="#273142" stroke-width="4"/><text x="718" y="204" text-anchor="middle">Комплект выбран</text>
+<rect x="465" y="300" width="210" height="80" rx="11" fill="#eff5fc" stroke="#273142" stroke-width="2"/><text x="570" y="345" text-anchor="middle">Найти или заменить вещи</text>
+<path d="M 355 202 L 307 255" fill="none" stroke="#526077" stroke-dasharray="4 4"/>
+<path d="M 120 255 H 105 V 343 H 120" fill="none" stroke="#526077"/>
+<text x="116" y="275" fill="#3c4b60" font-size="14"><tspan x="116">Учитываются повод, погода</tspan><tspan x="116" dy="17">и доступность вещей.</tspan><tspan x="116" dy="17">При сомнении можно спросить</tspan><tspan x="116" dy="17">мнение близкого.</tspan></text>
+</g></svg>
