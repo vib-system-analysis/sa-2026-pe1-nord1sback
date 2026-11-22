@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="700" viewBox="0 0 800 700">
+<title>Directed graph</title><defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#405268"/></marker></defs>
+<rect width="800" height="700" fill="white"/>
+<line x1="418.6" y1="93.5" x2="636.6" y2="251.9" stroke="#405268" marker-end="url(#a)"/>
+<text x="528.4" y="169.3" font-size="11" fill="#27364a">E01</text>
+<line x1="572.2" y1="150.2" x2="642.1" y2="246.3" stroke="#405268" marker-end="url(#a)"/>
+<text x="607.7" y="195.1" font-size="11" fill="#27364a">E02</text>
+<line x1="648.8" y1="289.6" x2="648.8" y2="408.4" stroke="#405268" marker-end="url(#a)"/>
+<text x="648.8" y="346.0" font-size="11" fill="#27364a">E03</text>
+<line x1="664.8" y1="410.4" x2="664.8" y2="291.6" stroke="#405268" marker-end="url(#a)"/>
+<text x="664.8" y="346.0" font-size="11" fill="#27364a">E04</text>
+<line x1="643.3" y1="452.0" x2="573.4" y2="548.2" stroke="#405268" marker-end="url(#a)"/>
+<text x="607.7" y="496.9" font-size="11" fill="#27364a">E05</text>
+<line x1="413.5" y1="98.6" x2="642.1" y2="413.2" stroke="#405268" marker-end="url(#a)"/>
+<text x="528.4" y="252.7" font-size="11" fill="#27364a">E06</text>
+<line x1="399.5" y1="104.3" x2="543.4" y2="547.1" stroke="#405268" marker-end="url(#a)"/>
+<text x="471.7" y="322.7" font-size="11" fill="#27364a">E07</text>
+<line x1="559.2" y1="544.1" x2="415.3" y2="101.3" stroke="#405268" marker-end="url(#a)"/>
+<text x="487.0" y="317.7" font-size="11" fill="#27364a">E08</text>
+<line x1="633.5" y1="440.5" x2="415.5" y2="598.8" stroke="#405268" marker-end="url(#a)"/>
+<text x="523.7" y="516.2" font-size="11" fill="#27364a">E09</text>
+<line x1="423.3" y1="613.0" x2="641.3" y2="454.6" stroke="#405268" marker-end="url(#a)"/>
+<text x="533.1" y="529.2" font-size="11" fill="#27364a">E10</text>
+<line x1="632.4" y1="432.9" x2="262.6" y2="553.1" stroke="#405268" marker-end="url(#a)"/>
+<text x="446.6" y="489.3" font-size="11" fill="#27364a">E11</text>
+<line x1="265.6" y1="568.9" x2="635.5" y2="448.8" stroke="#405268" marker-end="url(#a)"/>
+<text x="451.5" y="504.5" font-size="11" fill="#27364a">E12</text>
+<line x1="165.1" y1="426.3" x2="633.0" y2="274.3" stroke="#405268" marker-end="url(#a)"/>
+<text x="400.0" y="346.0" font-size="11" fill="#27364a">E13</text>
+<line x1="166.2" y1="433.4" x2="631.8" y2="433.4" stroke="#405268" marker-end="url(#a)"/>
+<text x="400.0" y="429.4" font-size="11" fill="#27364a">E14</text>
+<line x1="166.2" y1="266.6" x2="631.8" y2="266.6" stroke="#405268" marker-end="url(#a)"/>
+<text x="400.0" y="262.6" font-size="11" fill="#27364a">E15</text>
+<line x1="161.8" y1="280.1" x2="538.5" y2="553.7" stroke="#405268" marker-end="url(#a)"/>
+<text x="351.0" y="413.5" font-size="11" fill="#27364a">E16</text>
+<line x1="254.8" y1="150.2" x2="544.0" y2="548.2" stroke="#405268" marker-end="url(#a)"/>
+<text x="400.0" y="346.0" font-size="11" fill="#27364a">E17</text>
+<circle cx="400.0" cy="80.0" r="22" fill="#e5f1ff" stroke="#174e80"/><text x="400.0" y="85.0" text-anchor="middle" font-family="sans-serif" font-size="16">U</text>
+<circle cx="558.7" cy="131.6" r="22" fill="#e5f1ff" stroke="#174e80"/><text x="558.7" y="136.6" text-anchor="middle" font-family="sans-serif" font-size="16">G</text>
+<circle cx="656.8" cy="266.6" r="22" fill="#e5f1ff" stroke="#174e80"/><text x="656.8" y="271.6" text-anchor="middle" font-family="sans-serif" font-size="16">S</text>
+<circle cx="656.8" cy="433.4" r="22" fill="#e5f1ff" stroke="#174e80"/><text x="656.8" y="438.4" text-anchor="middle" font-family="sans-serif" font-size="16">F</text>
+<circle cx="558.7" cy="568.4" r="22" fill="#e5f1ff" stroke="#174e80"/><text x="558.7" y="573.4" text-anchor="middle" font-family="sans-serif" font-size="16">D</text>
+<circle cx="400.0" cy="620.0" r="22" fill="#e5f1ff" stroke="#174e80"/><text x="400.0" y="625.0" text-anchor="middle" font-family="sans-serif" font-size="16">M</text>
+<circle cx="241.3" cy="568.4" r="22" fill="#e5f1ff" stroke="#174e80"/><text x="241.3" y="573.4" text-anchor="middle" font-family="sans-serif" font-size="16">H</text>
+<circle cx="143.2" cy="433.4" r="22" fill="#e5f1ff" stroke="#174e80"/><text x="143.2" y="438.4" text-anchor="middle" font-family="sans-serif" font-size="16">W</text>
+<circle cx="143.2" cy="266.6" r="22" fill="#e5f1ff" stroke="#174e80"/><text x="143.2" y="271.6" text-anchor="middle" font-family="sans-serif" font-size="16">E</text>
+<circle cx="241.3" cy="131.6" r="22" fill="#e5f1ff" stroke="#174e80"/><text x="241.3" y="136.6" text-anchor="middle" font-family="sans-serif" font-size="16">T</text>
+</svg>
